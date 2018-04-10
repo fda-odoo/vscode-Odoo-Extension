@@ -1,0 +1,421 @@
+{
+    "fields.Boolean.basic": {
+        "body": [
+            "${1:variable} = fields.Boolean(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=${5:''})${0}"
+        ],
+        "description": "BASIC field type Boolean",
+        "prefix": "fields.Boolean"
+    },
+    "fields.Boolean.advanced": {
+        "body": [
+            "${1:variable} = fields.Boolean(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    inverse=\"_${6:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9|False,True|},",
+            "    groups=\"${10:}\",",
+            "    store=${11|True,False|},",
+            "    help=${12:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Boolean",
+        "prefix": "afields.Boolean"
+    },
+
+    "fields.Integer.basic": {
+        "body": [
+            "${1:variable} = fields.Integer(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=\"${5:}\")${0}"
+        ],
+        "description": "BASIC field type Integer",
+        "prefix": "fields.Integer"
+    },
+    "fields.Integer.advanced": {
+        "body": [
+            "${1:variable} = fields.Integer(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    inverse=\"_${6:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9:0},",
+            "    groups=\"${10:}\",",
+            "    store=${11|True,False|},",
+            "    help=${12:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Integer",
+        "prefix": "afields.Integer"
+    },
+
+    "fields.Float.basic": {
+        "body": [
+            "${1:variable} = fields.Float(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=${5:''})${0}"
+        ],
+        "description": "BASIC field type Float",
+        "prefix": "fields.Float"
+    },
+    "fields.Float.advanced": {
+        "body": [
+            "${1:variable} = fields.Float(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    inverse=\"_${6:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9:0.0},",
+            "    digits=(${10:16}, ${11:2}),",
+            "    groups=\"${10:}\",",
+            "    store=${11|True,False|},",
+            "    help=${12:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Float",
+        "prefix": "afields.Float"
+    },
+
+    "fields.Monetary.basic": {
+        "body": [
+            "${1:variable} = fields.Monetary(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=\"${5:}\")${0}"
+        ],
+        "description": "BASIC field type Monetary",
+        "prefix": "fields.Monetary"
+    },
+    "fields.Monetary.advanced": {
+        "body": [
+            "${1:variable} = fields.Monetary(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    inverse=\"_${6:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9:0},",
+            "    groups=\"${10:}\",",
+            "    store=${11|True,False|},",
+            "    help=${12:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Monetary",
+        "prefix": "afields.Monetary"
+    },
+
+    "fields.Char.basic": {
+        "body": [
+            "${1:variable} = fields.Char(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=\"${5:}\")${0}"
+        ],
+        "description": "BASIC field type Char",
+        "prefix": "fields.Char"
+    },
+    "fields.Char.advanced": {
+        "body": [
+            "${1:variable} = fields.Char(",
+            "    string=\"${2:}\",",
+            "    size=${3:255},",
+            "    required=${4|False,True|},",
+            "    readonly=${5|False,True|},",
+            "    compute=\"_${6:}\",",
+            "    inverse=\"_${7:}\",",
+            "    search=\"_${8:}\",",
+            "    index=${9|False,True|},",
+            "    default=\"${10:}\",",
+            "    groups=\"${11:}\",",
+            "    store=${12|True,False|},",
+            "    help=${13:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Char",
+        "prefix": "afields.Char"
+    },
+
+    "fields.Text.basic": {
+        "body": [
+            "${1:variable} = fields.Text(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=\"${5:}\")${0}"
+        ],
+        "description": "BASIC field type Text",
+        "prefix": "fields.Text"
+    },
+    "fields.Text.advanced": {
+        "body": [
+            "${1:variable} = fields.Text(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    inverse=\"_${6:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9:False},",
+            "    groups=\"${10:}\",",
+            "    store=${11|True,False|},",
+            "    help=${12:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Text",
+        "prefix": "afields.Text"
+    },
+
+    "fields.Html.basic": {
+        "body": [
+            "${1:variable} = fields.Html(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=\"${5:}\")${0}"
+        ],
+        "description": "BASIC field type Html",
+        "prefix": "fields.Html"
+    },
+    "fields.Html.advanced": {
+        "body": [
+            "${1:variable} = fields.Html(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    inverse=\"_${6:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9:},",
+            "    groups=\"${10:}\",",
+            "    store=${11|True,False|},",
+            "    help=${12:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Html",
+        "prefix": "afields.Html"
+    },
+
+    "fields.Date.basic": {
+        "body": [
+            "${1:variable} = fields.Date(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=\"${5:}\")${0}"
+        ],
+        "description": "BASIC field type Date",
+        "prefix": "fields.Date"
+    },
+    "fields.Date.advanced": {
+        "body": [
+            "${1:variable} = fields.Date(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    inverse=\"_${6:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9:False},",
+            "    timestamp=${10:None},",
+            "    groups=\"${11:}\",",
+            "    store=${12|True,False|},",
+            "    help=${13:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Date",
+        "prefix": "afields.Date"
+    },
+
+    "fields.Datetime.basic": {
+        "body": [
+            "${1:variable} = fields.Datetime(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=\"${5:}\")${0}"
+        ],
+        "description": "BASIC field type Datetime",
+        "prefix": "fields.Datetime"
+    },
+    "fields.Datetime.advanced": {
+        "body": [
+            "${1:variable} = fields.Datetime(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    inverse=\"_${6:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9:False},",
+            "    groups=\"${10:}\",",
+            "    timestamp=\"${11:fields.Datetime.now}\",",
+            "    store=${12|True,False|},",
+            "    help=${13:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Datetime",
+        "prefix": "afields.Datetime"
+    },
+
+    "fields.Binary.basic": {
+        "body": [
+            "${1:variable} = fields.Binary(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=\"${5:}\")${0}"
+        ],
+        "description": "BASIC field type Binary",
+        "prefix": "fields.Binary"
+    },
+    "fields.Binary.advanced": {
+        "body": [
+            "${1:variable} = fields.Binary(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9:},",
+            "    groups=\"${10:}\",",
+            "    store=${11|True,False|},",
+            "    help=${12:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Binary",
+        "prefix": "afields.Binary"
+    },
+
+    "fields.Selection.basic": {
+        "body": [
+            "${1:variable} = fields.Selection(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=\"${5:}\")${0}"
+        ],
+        "description": "BASIC field type Selection",
+        "prefix": "fields.Selection"
+    },
+    "fields.Selection.advanced": {
+        "body": [
+            "${1:variable} = fields.Selection(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    inverse=\"_${6:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9|False,True|},",
+            "    selection=\"${9:}\",",
+            "    groups=\"${10:}\",",
+            "    store=${11|True,False|},",
+            "    help=${12:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Selection",
+        "prefix": "afields.Selection"
+    },
+
+    "fields.Reference.basic": {
+        "body": [
+            "${1:variable} = fields.Reference(\"${2:Field_name}\", required=${3|False,True|}, readonly=${4|False,True|}, help=\"${5:}\")${0}"
+        ],
+        "description": "BASIC field type Reference",
+        "prefix": "fields.Reference"
+    },
+    "fields.Reference.advanced": {
+        "body": [
+            "${1:variable} = fields.Reference(",
+            "    string=\"${2:}\",",
+            "    required=${3|False,True|},",
+            "    readonly=${4|False,True|},",
+            "    compute=\"_${5:}\",",
+            "    inverse=\"_${6:}\",",
+            "    search=\"_${7:}\",",
+            "    index=${8|False,True|},",
+            "    default=${9:False},",
+            "    selection=\"${10:}\",",
+            "    groups=\"${11:}\",",
+            "    store=${12|True,False|},",
+            "    help=${13:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Reference",
+        "prefix": "afields.Reference"
+    },
+
+    "fields.Many2one.basic": {
+        "body": [
+            "${1:variable} = fields.Many2one(\"${2:Field_name}\", comodel_name=\"${3:}\", required=${4|False,True|}, readonly=${5|False,True|}, \"help=${6:}\")${0}"
+        ],
+        "description": "BASIC field type Many2one",
+        "prefix": "fields.Many2one"
+    },
+    "fields.Many2one.advanced": {
+        "body": [
+            "${1:variable} = fields.Many2one(",
+            "    string=\"${2:}\",",
+            "    comodel_name=\"${3:}\",",
+            "    domain=[(${4:})],",
+            "    required=${5|False,True|},",
+            "    readonly=${6|False,True|},",
+            "    compute=\"_${7:}\",",
+            "    inverse=\"_${8:}\",",
+            "    search=\"_${9:}\",",
+            "    index=${10|False,True|},",
+            "    default=${11:},",
+            "    groups=\"${12:}\",",
+            "    store=${13|True,False|},",
+            "    help=${14:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Many2one",
+        "prefix": "afields.Many2one"
+    },
+
+    "fields.One2many.basic": {
+        "body": [
+            "${1:variable} = fields.One2many(\"${2:Field_name}\", comodel_name=\"${3:}\", inverse_name=\"${4:}\", required=${5|False,True|}, readonly=${6|False,True|}, \"help=${7:}\")${0}"
+        ],
+        "description": "BASIC field type One2many",
+        "prefix": "fields.One2many"
+    },
+    "fields.One2many.advanced": {
+        "body": [
+            "${1:variable} = fields.One2many(",
+            "    string=\"${2:}\",",
+            "    comodel_name=\"${3:}\",",
+            "    inverse=[(${4:})],",
+            "    domain=[(${5:})],",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            "    compute=\"_${8:}\",",
+            "    inverse=\"_${9:}\",",
+            "    search=\"_${10:}\",",
+            "    index=${11|False,True|},",
+            "    default=${12:},",
+            "    groups=\"${13:}\",",
+            "    store=${14|True,False|},",
+            "    help=${15:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type One2many",
+        "prefix": "afields.One2many"
+    },
+
+    "fields.Many2many.basic": {
+        "body": [
+            "${1:variable} = fields.Many2many(\"${2:Field_name}\", comodel_name=\"${3:}\", required=${4|False,True|}, readonly=${5|False,True|}, \"help=${6:}\")${0}"
+        ],
+        "description": "BASIC field type Many2many",
+        "prefix": "fields.Many2many"
+    },
+    "fields.Many2many.advanced": {
+        "body": [
+            "${1:variable} = fields.Many2one(",
+            "    string=\"${2:}\",",
+            "    comodel_name=\"${3:}\",",
+            "    relation=${4:},",
+            "    column1=${5:},",
+            "    column2=${6:},",
+            "    domain=[(${7:})],",
+            "    required=${8|False,True|},",
+            "    readonly=${9|False,True|},",
+            "    compute=\"_${10:}\",",
+            "    inverse=\"_${11:}\",",
+            "    search=\"_${12:}\",",
+            "    index=${13|False,True|},",
+            "    default=${14:},",
+            "    groups=\"${15:}\",",
+            "    store=${16|True,False|},",
+            "    help=${17:False}",
+            ")${0}"
+        ],
+        "description": "ADVANCED field type Many2many",
+        "prefix": "afields.Many2many"
+    }
+}

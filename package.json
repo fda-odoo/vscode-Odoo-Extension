@@ -15,6 +15,10 @@
     ],
     "main": "./out/extension",
     "contributes": {
+        "snippets": [{
+            "language": "python",
+            "path": "./snippets/odoo_fields.json"
+        }],
         "commands": [
             {
                 "command": "extension.sayHello",
