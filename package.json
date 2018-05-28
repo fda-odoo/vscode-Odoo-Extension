@@ -11,20 +11,40 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onLanguage:python",
+        "onLanguage:xml",
+        "onLanguage:javascript"
     ],
     "main": "./out/extension",
     "contributes": {
+        "viewsContainers": {
+			"activitybar": [
+				{
+					"id": "odoo-servers",
+					"title": "Odoo Servers",
+					"icon": "media/odoo.svg"
+				}
+			]
+        },
+        "views": {
+			"odoo-servers": [
+				{
+					"id": "test",
+					"name": "Test"
+                },
+                {
+					"id": "testi",
+					"name": "Testi"
+				}
+			]
+        },
         "snippets": [{
             "language": "python",
             "path": "./snippets/odoo_fields.json"
-        }],
-        "commands": [
-            {
-                "command": "extension.sayHello",
-                "title": "Hello World"
-            }
-        ]
+        }]
+    },
+    "capabilities" : {
+        "hoverProvider" : "true"
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",

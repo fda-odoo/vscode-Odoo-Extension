@@ -4,7 +4,7 @@ This project will contain all the changes I did to my visual studio code to make
 
 ## Functionalities
 
-### A) Snipets
+### A) Snippets
 
 The extension provide some snipets to help you to type faster:
 
